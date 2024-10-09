@@ -275,24 +275,22 @@ def easy_adventure():
         # determines who the player wants to help, starts the function related to player choice, killing children is line 1, witch is line 2
         choice = input("You can: \n1. Help the witch fight off the ruffians \n2. Help the ruffians fight the witch\n")
         if choice == "1":
-            print("Because you are a good samaritan, you decide to help the witch fight off those stupid children.")
+            print("Because you are a good samaritan, you decide to help the witch fight off the ruffians.")
             sleep(1)
             # fight against children
             enemy(weapon=candy_cane_sword, health=6, gold=2, name="Bastard Children", voice_line=None)
-            print("The nice witch thanks you for killing those bastard children. You decide to keep going along the path")
+            print("The nice witch thanks you for vanquishing the children back to their parents. You decide to keep going along the path")
             sleep(1)
             # line 1.1 
             easy_adventure_just_killed_children()
             break
         elif choice == "2":
-            print("Because you are a total prick, you decide to help the bastard children who are eeating the poor witches house.")
+            print("Because you are a total prick, you decide to help the children who are eating the poor witches house.")
             sleep(1)
             # fight against witch
             enemy(weapon=poor_witches_spell, health=9, gold=9, name="The Poor Witch With Children Eating Her House", voice_line="Why would you help those horrible children! They are ruining my house!")
             sleep(1)
-            print("The bastard children don't even thank you for helping and go back to eating the dead witches house like the spoiled brats they are.")
-            sleep(3)
-            print("The witch that just wanted her house to not be eaten looks at you as she slowly bleeds out from her wounds. The stupid bastard children don't even blink.")
+            print("The witch that just wanted her house to not be eaten looks at you as she slowly bleeds out from her wounds. The children don't even blink.")
             # line 2.1
             easy_adventure_just_killed_poor_nice_witch()
             break
@@ -307,7 +305,7 @@ def easy_adventure_just_killed_children():
     sleep(2)
     print("He replies that he is going over to the witches house and asks you if you had seen her.")
     sleep(3)
-    print("You reply, telling him about the ordeal with those bastard children.")
+    print("You reply, telling him about the ordeal with those children.")
     sleep(3)
     print("He explains that he is a friend of the witch and that she is always lamenting about the horrible children who keep eating her house.")
     sleep(3)
@@ -357,7 +355,7 @@ def easy_adventure_just_killed_poor_nice_witch():
     sleep(3)
     print("The orc questions you about the house, asking if you saw the witch.")
     sleep(3)
-    print("You fail the charisma roll and tell the orc that you murdered the poor witch in cold blood to help some brat children.")
+    print("You fail the charisma roll and tell the orc that you murdered the poor witch in cold blood to help some children.")
     sleep(3)
     print("This enrages the orc. You wonder if they were friends.")
     sleep(3)
